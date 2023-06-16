@@ -54,6 +54,8 @@ class UserRepository implements UserRepositoryInterface
 
         if($user) {
             $user->update($refineData);
+
+            return jsonResponse('success', 'Successfully User Updated!', route('user.index'));
         }
 
          User::create($refineData);

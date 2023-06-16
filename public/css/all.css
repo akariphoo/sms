@@ -23666,30 +23666,28 @@
     text-align: left;
 }
 
-input[type=text] {
-    background-color: #1A2226;
-    border: none;
-    border-bottom: 2px solid #0DB8DE;
-    border-top: 0px;
-    border-radius: 0px;
-    font-weight: bold;
+/* input[type=text] {
+    border: 1px solid #EC37FC;
     outline: 0;
-    margin-bottom: 20px;
-    padding-left: 0px;
-    color: #ECF0F5;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: #000;
 }
 
 input[type=password] {
-    background-color: #1A2226;
-    border: none;
-    border-bottom: 2px solid #0DB8DE;
-    border-top: 0px;
-    border-radius: 0px;
-    font-weight: bold;
+    border: 1px solid #EC37FC;
     outline: 0;
-    padding-left: 0px;
     margin-bottom: 20px;
-    color: #ECF0F5;
+    padding-left: 10px;
+    color: #000;
+}
+
+.select {
+    border: 1px solid #EC37FC;
+    outline: 0;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    color: #000;
 }
 
 .form-group {
@@ -23697,15 +23695,7 @@ input[type=password] {
     outline: 0px;
 }
 
-.form-control:focus {
-    border-color: inherit;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border-bottom: 2px solid #0DB8DE;
-    outline: 0;
-    background-color: #1A2226;
-    color: #ECF0F5;
-}
+
 
 input:focus {
     outline: none;
@@ -23721,7 +23711,7 @@ label {
     color: #6C6C6C;
     font-weight: bold;
     letter-spacing: 1px;
-}
+} */
 
 .btn-outline-primary {
     border-color: #0DB8DE;

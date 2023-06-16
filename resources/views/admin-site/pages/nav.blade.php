@@ -11,17 +11,17 @@
         <li class="nav-item nav-search d-none d-lg-block">
           <div class="input-group">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="search">
+              {{-- <span class="input-group-text" id="search">
                 <i class="icon-search"></i>
-              </span>
+              </span> --}}
             </div>
-            <input type="text" class="form-control" placeholder="Search Projects.." aria-label="search" aria-describedby="search">
+            {{-- <input type="text" class="form-control" placeholder="Search Projects.." aria-label="search" aria-describedby="search"> --}}
           </div>
         </li>
       </ul>
       <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown d-lg-flex d-none">
-              <button type="button" class="btn btn-info font-weight-bold">+ Create New</button>
+              {{-- <button type="button" class="btn btn-info font-weight-bold">+ Create New</button> --}}
           </li>
         <li class="nav-item dropdown d-flex">
           <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">

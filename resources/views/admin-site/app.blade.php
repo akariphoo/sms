@@ -26,8 +26,8 @@
         <div class="content-wrapper">
           <div class="row">
             <div class="col-sm-12 mb-4 mb-xl-0">
-              <h4 class="font-weight-bold text-dark">Hi, welcome back!</h4>
-              <p class="font-weight-normal mb-2 text-muted">APRIL 1, 2019</p>
+              {{-- <h4 class="font-weight-bold text-dark">Hi, welcome back!</h4>
+              <p class="font-weight-normal mb-2 text-muted">APRIL 1, 2019</p> --}}
             </div>
           </div>
           <div class="row mt-3">
@@ -57,9 +57,13 @@
   {{-- link with js --}}
     <script src="{{ asset('js/all.js') }}"></script>
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/js/toastr.js"></script> --}}
-    <script>
-      
-  </script>
+    
+      @if (Session::has('success'))
+        <script>
+          toastr.success("{{ Session::get('success') }}");
+        </script>
+      @endif
+  
 </body>
 
 </html>

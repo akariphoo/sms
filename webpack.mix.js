@@ -38,6 +38,7 @@ mix.styles([
     'public/css/admin-site/vendors/jquery-bar-rating/fontawesome-stars.css',
     'public/css/toastr.min.css',
     'public/css/admin-site/style.css',
+    // 'public/css/login.css',
 ], 'public/css/all.css');
 
 mix.sass('resources/sass/app.scss', 'public/css/all.css');

@@ -1,13 +1,12 @@
-<x-forms.form-tag :attrs="[
+<x-forms::form-tag :attrs="[
     'id' => 'user-form',
     'formName' => 'user-form',
     'id' => 'user-form',
     'class' => 'user-form',
     'method' => $method,
     'action' => $route
-]">
-  
-    <x-forms.text-input :attrs="[
+]">  
+    <x-forms::text-input :attrs="[
         'name' => 'name',
         'id' => 'name',
         'value' => $user->name,
@@ -16,7 +15,7 @@
         'required' => 'required',
         'placeholder' => ''
     ]" />
-    <x-forms.text-input :attrs="[
+    <x-forms::text-input :attrs="[
         'name' => 'email',
         'id' => 'email',
         'value' => $user->email,
@@ -25,7 +24,7 @@
         'required' => 'required',
         'placeholder' => ''
     ]" />
-    <x-forms.password-input :attrs="[
+    <x-forms::password-input :attrs="[
         'name' => 'password',
         'id' => 'password',
         'value' => '',
@@ -34,7 +33,7 @@
         'required' => $user->id ? '' : 'required',
         'placeholder' => ''
     ]" />
-    <x-forms.password-input :attrs="[
+    <x-forms::password-input :attrs="[
         'name' => 'password_confirmation',
         'id' => 'password_confirmation',
         'value' => '',
@@ -43,19 +42,18 @@
         'required' => $user->id ? '' : 'required',
         'placeholder' => ''
     ]" />
-    <x-forms.select-with-key-value :attrs="[
+    <x-forms::select-with-key-value :attrs="[
         'name' => 'role_id',
         'id' => 'role_id',
         'label' => 'Role',
-        'class' => 'role_id',
+        'class' => 'role_id select',
         'selected' => $user->role_id,
         'required' => 'required',
         'placeholder' => '',
         'list' => $roles
         ]"
-    />
-  
-</x-forms.form-tag>
+    />  
+</x-forms::form-tag>
 
 <div class="text-center pt-5">
     <button type="submit" name="form-submit-button" form="user-form" class="btn btn-success btn-hover">
