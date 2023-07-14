@@ -6,8 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Regal Admin</title>
-    {{-- link with css --}}
-    
+    {{-- link with css --}}    
   <link rel="stylesheet" href="{{ asset('css/all.css') }}">
   <link rel="shortcut icon" href="{{ asset('images/s-logo.png') }}" />
   {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/css/toastr.css" rel="stylesheet" /> --}}

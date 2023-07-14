@@ -18,6 +18,18 @@
         </a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="{{ route('department.index') }}">
+          <i class="icon-box menu-icon"></i>
+          <span class="menu-title">Departments</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('course.index') }}">
+          <i class="icon-box menu-icon"></i>
+          <span class="menu-title">Courses</span>
+        </a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="{{ route('user.index') }}">
           <i class="icon-box menu-icon"></i>
           <span class="menu-title">Users</span>

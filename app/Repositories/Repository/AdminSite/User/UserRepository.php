@@ -73,7 +73,6 @@ class UserRepository implements UserRepositoryInterface
             $user->delete();
             return jsonResponse('success', 'Successfully User Deleted!', route('user.index'));
         }
-
         return jsonResponse('error', 'User Not Fount!', route('user.index'));
     }
 }

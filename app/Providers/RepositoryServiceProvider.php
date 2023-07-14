@@ -13,9 +13,16 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        // adminsite/user
         $this->app->bind(
             \App\Repositories\Interfaces\AdminSite\User\UserRepositoryInterface::class,
             \App\Repositories\Repository\AdminSite\User\UserRepository::class
+        );
+
+        // adminsite/department
+        $this->app->bind(
+            \App\Repositories\Interfaces\AdminSite\Department\DepartmentRepositoryInterface::class,
+            \App\Repositories\Repository\AdminSite\Department\DepartmentRepository::class
         );
     }
 

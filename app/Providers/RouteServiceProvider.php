@@ -58,7 +58,7 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
 
-            // for admin_site
+            // for admin_site/users
             Route::group([
                     'prefix' => 'admin/user',
                     'middleware' => ['web', 'role:admin'],
@@ -66,6 +66,24 @@ class RouteServiceProvider extends ServiceProvider
                 ], function ($router) {
                     require base_path('routes/admin_site/users/web.php');
                 });
+
+             // for admin_site/departments
+             Route::group([
+                    'prefix' => 'admin/department',
+                    'middleware' => ['web', 'role:admin'],
+                    'namespace' => $this->namespace,
+                ], function ($router) {
+                    require base_path('routes/admin_site/departments/web.php');
+            });
+
+            // for admin_site/courses
+            Route::group([
+                'prefix' => 'admin/course',
+                'middleware' => ['web', 'role:admin'],
+                'namespace' => $this->namespace,
+            ], function ($router) {
+                require base_path('routes/admin_site/courses/web.php');
+        });
         });
     }
 

@@ -20,5 +20,6 @@ return [
         database_path('migrations'),
         database_path('migrations/users'),
         database_path('migrations/roles_and_permissions'),
+        database_path('migrations/departments'),
     ],
 ];
