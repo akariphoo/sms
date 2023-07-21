@@ -24,6 +24,12 @@ class RepositoryServiceProvider extends ServiceProvider
             \App\Repositories\Interfaces\AdminSite\Department\DepartmentRepositoryInterface::class,
             \App\Repositories\Repository\AdminSite\Department\DepartmentRepository::class
         );
+
+        // adminsite/course
+        $this->app->bind(
+            \App\Repositories\Interfaces\AdminSite\Course\CourseRepositoryInterface::class,
+            \App\Repositories\Repository\AdminSite\Course\CourseRepository::class
+        );
     }
 
     /**

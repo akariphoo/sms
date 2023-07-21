@@ -36,6 +36,12 @@
         </a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="{{ route('student.index') }}">
+          <i class="icon-box menu-icon"></i>
+          <span class="menu-title">Student</span>
+        </a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic">
           <i class="icon-disc menu-icon"></i>
           <span class="menu-title">test</span>
